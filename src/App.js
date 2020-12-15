@@ -1,11 +1,21 @@
+import { ThemeProvider } from 'styled-components';
 
+import { Header } from './components/header';
+
+import { theme } from './utilise/theme';
 import './App.css';
 
 function App() {
+
   return (
-    <div className="App">
-      asddf
-    </div>
+    <ThemeProvider theme={theme}>
+
+      <Header />
+
+      <div className="App">
+        asddf
+      </div>
+    </ThemeProvider>
   );
 }
 
