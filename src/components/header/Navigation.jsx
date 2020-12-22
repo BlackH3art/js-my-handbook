@@ -2,16 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-  background-color: ${props => props.theme.colors.red};
+  background-color: ${props => props.theme.colors.dark.first};
   width: 100%;
-  height: ${props => props.theme.spacing.xl * 5}px;
+  height: ${props => props.theme.spacing.xl * 3}px;
+  display: flex; 
 `
 
-const Header = () => {
+function Header() {
 
   return ( 
     <>
-      <HeaderContainer />
+      <HeaderContainer>
+        
+      </HeaderContainer>
     </>
    );
 }

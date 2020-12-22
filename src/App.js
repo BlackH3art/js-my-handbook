@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components';
+import { AnimatePresence, AnimateSharedLayout } from "framer-motion"
 
 import { Header } from './components/header';
 
@@ -9,12 +10,19 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <AnimateSharedLayout>
+      <AnimatePresence>
 
-      <Header />
 
-      <div className="App">
-        asddf
-      </div>
+        <Header />
+
+        <div className="App">
+          asddf
+        </div>
+
+
+      </AnimatePresence>
+      </AnimateSharedLayout>
     </ThemeProvider>
   );
 }

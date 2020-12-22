@@ -7,8 +7,12 @@ export const theme = {
   },
   colors: {
     black: "#000000",
-    dark: "#282c34",
-    red: "#ff0000"
+    dark: {
+      first: "#3B3B3B",
+    },
+    js_yellow: "#f7e018",
+    ts_blue: "#0385d2",
+
 
   }
 };
