@@ -1,0 +1,34 @@
+nav.main-menu {
+  display: flex;
+  width: 80%;
+}
+
+nav.main-menu ul {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+nav.main-menu ul a {
+  height: 100%;
+}
+
+nav.main-menu ul a li {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.active-js {
+  color: black;
+  background-color: #f7e018;
+}
+.active-ts {
+  color: white;
+  background-color: #0385d2;
+}
+.active-normal {
+  color: white;
+  background-color: #555555;
+}
