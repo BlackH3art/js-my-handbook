@@ -1,0 +1,10 @@
+li.menu-element {
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+
+}
+
+ul.aside-submenu {
+  /* background-color: darkgrey; */
+  margin-left: 20px;
+}

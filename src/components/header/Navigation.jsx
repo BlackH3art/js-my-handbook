@@ -63,9 +63,9 @@ function Header() {
         
         <nav className="main-menu">
           <ul>
-            <NavLink to="/" activeClassName="active-normal" exact={true}> <LiNormalItem>strona główna</LiNormalItem> </NavLink>
-            <NavLink to="/lib/javaScript" activeClassName="active-js"> <LiJavaScript>javaScript</LiJavaScript> </NavLink>
-            <NavLink to="/lib/typeScript" activeClassName="active-ts"> <LiTypeScript>typeScript</LiTypeScript> </NavLink>
+            <NavLink to="/" activeClassName="active-normal" exact> <LiNormalItem>strona główna</LiNormalItem> </NavLink>
+            <NavLink to="/lib/javascript" activeClassName="active-js"> <LiJavaScript>javaScript</LiJavaScript> </NavLink>
+            <NavLink to="/lib/typescript" activeClassName="active-ts"> <LiTypeScript>typeScript</LiTypeScript> </NavLink>
           </ul>
         </nav>
 

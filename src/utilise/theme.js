@@ -11,6 +11,13 @@ export const theme = {
       first: "#3B3B3B",
       second: "#555555"
     },
+    grey: {
+      first: "#E5ECF4",
+      second: "#CED4DB",
+      third: "#AAAFB5",
+      fourth: "#6E7275",
+      fifth: "#323436"
+    },
     js_yellow: "#f7e018",
     ts_blue: "#0385d2",
     font: {
