@@ -1,7 +1,19 @@
-/* li.submenu-element {
-
-} */
+li.submenu-element {
+  padding: 4px 0;
+}
 
 ul.links-list {
   margin-left: 20px;
+}
+
+li.single-link-li {
+  padding: 3px 0;
+  transition: .2s;
+}
+
+li.single-link-li:hover {
+  cursor: pointer;
+  color: blue;
+  text-decoration: blue underline;
+  background-color: #fff;
 }

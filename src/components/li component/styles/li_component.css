@@ -1,5 +1,5 @@
 li.menu-element {
-  border-bottom: 1px solid black;
+  /* border: 1px solid black; */
   padding: 10px 0;
 
 }
@@ -7,4 +7,13 @@ li.menu-element {
 ul.aside-submenu {
   /* background-color: darkgrey; */
   margin-left: 20px;
+}
+
+.icon-item {
+  transition: .2s;
+  padding: 0 10px;
+}
+
+.icon-item-active {
+  transform: rotate(90deg)
 }

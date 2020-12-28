@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import { AnimateSharedLayout } from "framer-motion";
+import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -28,29 +28,31 @@ function App() {
       <Provider store={store}>
         <ThemeProvider theme={theme}>
           <AnimateSharedLayout>
-            <QueryClientProvider client={queryClient}>
+            <AnimatePresence>
+              <QueryClientProvider client={queryClient}>
 
 
-              <Header />
+                <Header />
 
-              <Switch>
+                <Switch>
 
-                <Route path="/" exact>
-                  <MainPage />
-                </Route>
+                  <Route path="/" exact>
+                    <MainPage />
+                  </Route>
 
-                <Route path="/lib/javascript">
-                  <Javascript />
-                </Route>
+                  <Route path="/lib/javascript">
+                    <Javascript />
+                  </Route>
 
-                <Route path="/lib/typescript">
+                  <Route path="/lib/typescript">
 
-                </Route>    
+                  </Route>    
 
-              </Switch>
+                </Switch>
 
 
-            </QueryClientProvider>
+              </QueryClientProvider>
+            </AnimatePresence>
           </AnimateSharedLayout>
         </ThemeProvider>      
       </Provider>      

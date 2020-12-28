@@ -20,10 +20,10 @@ const Title = styled.h1`
 
 function AsideMenu({ state, title }) {
 
+
   const items = Object.keys(state).map(item => (
-    <LiComponent key={item} itemName={item} list={state[item]}> {item} </LiComponent>
-  ))
-  console.log(items);
+    <LiComponent key={item} id={item} itemName={item} list={state[item]}> {item} </LiComponent>
+  ));
 
   return (
     <>
@@ -32,9 +32,9 @@ function AsideMenu({ state, title }) {
         <Aside>
           <Title>{title}</Title>
           <hr/>
-          <ul className="aside-menu">
+          <motion.ul layout className="aside-menu">
             {items}
-          </ul>
+          </motion.ul>
         </Aside>
 
       </motion.div>

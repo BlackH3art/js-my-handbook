@@ -1,7 +1,7 @@
 div.aside-container {
   position: absolute;
   left: 0;
-  width: 300px;
+  width: 250px;
   height: 100vh;
   overflow-y: scroll;
   margin-top: 60px;
@@ -10,5 +10,5 @@ div.aside-container {
 
 ul.aside-menu {
   /* background-color: grey; */
-  width: 80%;
+  width: 100%;
 }
