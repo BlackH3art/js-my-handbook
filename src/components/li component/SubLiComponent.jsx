@@ -27,21 +27,21 @@ function SubLiComponent({ children, subItems, id, index }) {
     <>
       <AnimatePresence>
         <motion.li layout id={id} className="submenu-element" onClick={showUlCallback}
-                variants={{
-                  hidden: {
-                    opacity: 0,
-                    y: -50 * index
-                  },
-                  visible: () => ({
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      delay: 0.15
-                    }
-                  }),
-                }}
-                initial='hidden'
-                animate='visible'
+          variants={{
+            hidden: {
+              opacity: 0,
+              y: -50 * index
+            },
+            visible: () => ({
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.15
+              }
+            }),
+          }}
+          initial='hidden'
+          animate='visible'
         >
           <FontAwesomeIcon icon={faChevronRight} className={showUl ? "icon-item-active icon-item" : "icon-item"}/>{children}
         </motion.li>

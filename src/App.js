@@ -1,3 +1,4 @@
+import React, { Suspense } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import { Provider } from 'react-redux';
@@ -7,6 +8,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { Header } from './components/header';
 import { MainPage } from './components/main page';
 import { Javascript } from './components/javascript page';
+import { LoadingIndicator } from './components/loading indicator';
 
 import { theme } from './utilise/theme';
 import store from './store';
@@ -41,7 +43,11 @@ function App() {
                   </Route>
 
                   <Route path="/lib/javascript">
-                    <Javascript />
+                    <Suspense fallback={<LoadingIndicator />}>
+                    
+                      <Javascript />
+
+                    </Suspense>
                   </Route>
 
                   <Route path="/lib/typescript">

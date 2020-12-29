@@ -20,7 +20,10 @@ module.exports = function () {
         ],
         symbol: []
       }, 
-      loops: ["for", "do...while", "while", "for...in", "for...of"]
+      loops: {
+        for: ["for", "for...in", "for...of"],
+        do: ["do...while", "while"]
+      }
     },
     typescript: {
 

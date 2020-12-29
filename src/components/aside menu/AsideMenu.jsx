@@ -27,12 +27,12 @@ function AsideMenu({ state, title }) {
 
   return (
     <>
-      <motion.div className="aside-container">
+      <motion.div className="aside-container" initial={{width: 0}} animate={{width: 300}}>
         
         <Aside>
           <Title>{title}</Title>
-          <hr/>
-          <motion.ul layout className="aside-menu">
+          < hr/>
+          <motion.ul layout className="aside-menu" initial={{width: 0}} animate={{width: 300}}>
             {items}
           </motion.ul>
         </Aside>
