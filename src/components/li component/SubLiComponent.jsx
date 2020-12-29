@@ -18,14 +18,17 @@ function SubLiComponent({ children, subItems, id, index }) {
     
     // console.log(index);
     return (
-    <motion.li key={item + i} className="single-link-li" initial={{opacity: 0}} animate={{opacity: 1}}>
+    <motion.li key={item + i} className="single-link-li third-list" initial={{opacity: 0}} animate={{opacity: 1}}>
       {item}
     </motion.li>
   )});
 
+  // lista linków
+
   return (
     <>
       <AnimatePresence>
+
         <motion.li layout id={id} className="submenu-element" onClick={showUlCallback}
           variants={{
             hidden: {
@@ -43,7 +46,7 @@ function SubLiComponent({ children, subItems, id, index }) {
           initial='hidden'
           animate='visible'
         >
-          <FontAwesomeIcon icon={faChevronRight} className={showUl ? "icon-item-active icon-item" : "icon-item"}/>{children}
+          <FontAwesomeIcon icon={faChevronRight} className={showUl ? "icon-item-active icon-item second-list" : "icon-item second-list"}/>{children}
         </motion.li>
         {!showUl ? null : <motion.ul className="links-list" exit={{opacity: 0}}>
           {items}

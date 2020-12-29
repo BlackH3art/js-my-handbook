@@ -2,18 +2,43 @@ li.submenu-element {
   padding: 4px 0;
 }
 
+li.submenu-element:nth-last-child(1) {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+}
+
 ul.links-list {
-  margin-left: 20px;
+  /* padding-left: 20px; */
 }
 
 li.single-link-li {
-  padding: 3px 0;
+  padding: 3px 65px;
+  /* background-color: red; */
+  width: 100%;
   transition: .2s;
 }
+
 
 li.single-link-li:hover {
   cursor: pointer;
   color: blue;
   text-decoration: blue underline;
+}
+
+li.single-link-li:nth-last-child(1) {
+  border-bottom: 1px solid rgb(187, 187, 187);
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.second-list {
+  margin-left: 40px;
+}
+
+li.third-list {
+  margin-left: 0px;
+}
+
+li:hover {
   background-color: #fff;
 }

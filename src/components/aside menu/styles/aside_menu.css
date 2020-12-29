@@ -4,6 +4,7 @@ div.aside-container {
   width: 250px;
   height: 100vh;
   overflow-y: scroll;
+  overflow-x: hidden;
   margin-top: 60px;
   height: calc(100% - 20px * 3);
 }
@@ -11,4 +12,5 @@ div.aside-container {
 ul.aside-menu {
   /* background-color: grey; */
   width: 100%;
+  padding: 0 0 0 0px;
 }

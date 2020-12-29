@@ -17,8 +17,7 @@ module.exports = function () {
           "anchor", "big", "big", "blink", "bold", "charAt", "charCodeAt", "codePointAt", "concat", "endsWith", "fixed", "fontcolor", "fontsize", "includes", "indexOf", "italics", "lastIndexOf", 
           "link", "localeCompare", "match", "matchAll", "normalize", "padEnd", "padStart", "repeat", "replace", "replaceAll", "search", "slice", "small", "split", "startsWith", "strike", "sub", "substr", 
           "substring", "sup", "toLocaleLowerCase", "toLocaleUpperCase", "toLowerCase", "toUpperCase", "trim", "trimEnd", "trimLeft", "trimRight", "trimStart", "valueOf", 
-        ],
-        symbol: []
+        ]
       }, 
       loops: {
         for: ["for", "for...in", "for...of"],
@@ -27,6 +26,18 @@ module.exports = function () {
     },
     typescript: {
 
+    },
+    react: {
+      hooks: {
+        react: ['useState()', 'useEffect', 'useMemo()', 'useCallback()'],
+        react_router_dom: ['useParams()', 'useHistory()'],
+        react_redux: ['useDispatch()', 'useSelector()']
+      }, 
+      components: {
+        react: ['<Fragment>', '<Suspense>'],
+        react_router_dom: ['<BrowserRouter>', '<HashRouter>', '<Link>', '<NavLink>', '<Redirect>', '<Router>'],
+        react_redux: ['<Provider>']
+      }
     }
   }
 }

@@ -20,6 +20,10 @@ function LiComponent({ itemName, list, id }) {
     return <SubLiComponent key={listItem} index={i} id={listItem} subItems={list[listItem]} > {listItem} </SubLiComponent>
   })
 
+
+// lista obiektów
+
+
   return (
     <>
       <motion.li layout id={id} className="menu-element" onClick={showUlCallback}>
