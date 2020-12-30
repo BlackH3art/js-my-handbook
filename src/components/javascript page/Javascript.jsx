@@ -4,27 +4,31 @@ import { useQuery } from 'react-query';
 
 import fetchingData from '../../helpers/fetchingData';
 
-import { AsideMenu } from '../aside menu'
+import { AsideMenu } from '../aside menu';
+import { MapMethod } from '../javascript page/components';
+
 
 const JavascriptPage = styled.section`
-  min-height: 100vh;
+  position: relative;
+  height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 60px;
 `
 
 
 function Javascript() {
 
-  const { data } = useQuery(['mydata'], ({ data = 'javascript' }) => fetchingData(data))
+  const { data } = useQuery(['mydata'], ({ data = 'javascript' }) => fetchingData(data));
 
   return (
     <>
       <JavascriptPage>
 
         <AsideMenu title={'javaScript'} state={data}/>
-        
+
+        <MapMethod />
+
       </JavascriptPage>
     </>
   )

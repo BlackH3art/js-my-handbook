@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 
 import './styles/loading_indicator.css'
 

@@ -39,29 +39,29 @@ function App() {
 
                 <Switch>
 
-                  <Route path="/" exact>
-                    <MainPage />
-                  </Route>
+                  <div className="page-container">
 
-                  <Route path="/lib/javascript">
-                    <Suspense fallback={<LoadingIndicator />}>
-                    
-                      <Javascript />
+                    <Route path="/" exact>
+                      <MainPage />
+                    </Route>
 
-                    </Suspense>
-                  </Route>
+                    <Route path="/lib/javascript">
+                      <Suspense fallback={<LoadingIndicator />}>
+                        <Javascript />
+                      </Suspense>
+                    </Route>
 
-                  <Route path="/lib/typescript">
+                    <Route path="/lib/typescript">
 
-                  </Route>    
+                    </Route>   
 
-                  <Route path="/lib/react">
-                    <Suspense fallback={<LoadingIndicator />}>
+                    <Route path="/lib/react">
+                      <Suspense fallback={<LoadingIndicator />}>
+                        <ReactPage />
+                      </Suspense>
+                    </Route>    
 
-                      <ReactPage />
-
-                    </Suspense>
-                  </Route>    
+                  </div>
 
                 </Switch>
 

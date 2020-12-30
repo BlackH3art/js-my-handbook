@@ -17,4 +17,12 @@ h1, h2, h3, h4 {
   margin: 0 0;
 }
 
+div.page-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+
+}
+
 
