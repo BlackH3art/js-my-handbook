@@ -53,6 +53,19 @@ const LiNormalItem = styled.li`
   }
 `;
 
+const LiReact = styled.li`
+  background-color: transparent;
+  width: ${props => props.theme.spacing.xl * 6}px;
+  display: flex; 
+  justify-content: center;
+  transition: .2s;
+
+  &:hover {
+    background-color: ${props => props.theme.colors.react_blue};
+    color: #ffffff;
+  }
+`;
+
 
 
 function Header() {
@@ -66,6 +79,7 @@ function Header() {
             <NavLink to="/" activeClassName="active-normal" exact> <LiNormalItem>strona główna</LiNormalItem> </NavLink>
             <NavLink to="/lib/javascript" activeClassName="active-js"> <LiJavaScript>javaScript</LiJavaScript> </NavLink>
             <NavLink to="/lib/typescript" activeClassName="active-ts"> <LiTypeScript>typeScript</LiTypeScript> </NavLink>
+            <NavLink to="/lib/react" activeClassName="active-react"> <LiReact>React</LiReact> </NavLink>
           </ul>
         </nav>
 

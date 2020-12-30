@@ -5,7 +5,7 @@ import { LiComponent } from '../li component';
 
 import './styles/aside_menu.css';
 
-const Aside = styled.aside`
+export const Aside = styled.aside`
   width: 100%;
   background-color: ${props => props.theme.colors.grey.first};
   min-height: 100%;
@@ -14,7 +14,7 @@ const Aside = styled.aside`
   align-items: center;
 `;
 
-const Title = styled.h1`
+export const Title = styled.h1`
   margin-top: 20px;
   border-bottom: 1px solid black;
   width: 100%;

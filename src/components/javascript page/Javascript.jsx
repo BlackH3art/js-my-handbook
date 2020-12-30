@@ -17,34 +17,11 @@ const JavascriptPage = styled.section`
 
 function Javascript() {
 
-  // const [pseudoData, setPseudoData] = useState({
-  //   javascript: {
-  //     methods: {
-  //       array: ["concat", "copyWithin", "entries", "every", "fill", "filter", "find", "findIndex", "flat", "flatMap", "forEach", "includes"],
-  //       boolean: ["toString", "valueOf"],
-  //       number: ["toExponential", "toFixed", "toLocaleString", "toPrecision", "toString", "valueOf", "isFinite"],
-  //       object: ["hasOwnProperty", "isPrototypeOf", "propertyIsEnumerable", "toLocaleString", "toString", "valueOf", "assign", "create", ],
-  //       string: ["anchor", "big", "big", "blink", "bold", "charAt", "charCodeAt", "codePointAt", "concat", "endsWith", "fixed"],
-  //       symbol: []
-  //     }, 
-  //     loops: {
-  //       for: ["for", "for...in", "for...of"],
-  //       do: ["do...while", "while"]
-  //     }
-  //   },
-  //   typescript: {
-
-  //   }
-  // })
-
-
-  const { data } = useQuery(['mydata'], ({ asd = 'javascript' }) => fetchingData(asd))
+  const { data } = useQuery(['mydata'], ({ data = 'javascript' }) => fetchingData(data))
 
   return (
     <>
       <JavascriptPage>
-
-        {/* <LoadingIndicator /> */}
 
         <AsideMenu title={'javaScript'} state={data}/>
         

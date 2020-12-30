@@ -20,6 +20,7 @@ export const theme = {
     },
     js_yellow: "#f7e018",
     ts_blue: "#0385d2",
+    react_blue: "#61DBFB",
     font: {
       light: "#e7e7e7",
       dark: "#2c2c2c"

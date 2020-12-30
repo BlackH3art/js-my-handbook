@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { Header } from './components/header';
 import { MainPage } from './components/main page';
 import { Javascript } from './components/javascript page';
+import { ReactPage } from './components/react page';
 import { LoadingIndicator } from './components/loading indicator';
 
 import { theme } from './utilise/theme';
@@ -52,6 +53,14 @@ function App() {
 
                   <Route path="/lib/typescript">
 
+                  </Route>    
+
+                  <Route path="/lib/react">
+                    <Suspense fallback={<LoadingIndicator />}>
+
+                      <ReactPage />
+
+                    </Suspense>
                   </Route>    
 
                 </Switch>
